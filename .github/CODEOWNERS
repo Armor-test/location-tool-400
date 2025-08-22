@@ -1,0 +1,33 @@
+# CODEOWNERS file for location-tool-400
+# Global owners - will be requested for all PRs
+* @Armor-test/dept-release @Armor-test/unit-governance @Armor-test/dept-ui
+
+# Directory ownership
+/components/ @Armor-test/grp-integration @Armor-test/squad-apps
+/services/ @Armor-test/squad-product @Armor-test/team-security @Armor-test/dept-automation
+/data/ @Armor-test/dept-identity @Armor-test/team-notifications
+/static/ @Armor-test/grp-integration @Armor-test/grp-search
+/examples/ @Armor-test/grp-ui @Armor-test/unit-devops
+/controllers/ @Armor-test/dept-billing @Armor-test/team-reporting @Armor-test/dept-test
+/middleware/ @Armor-test/team-frontend @Armor-test/grp-storage @Armor-test/squad-ux
+/assets/ @Armor-test/squad-ml @Armor-test/squad-api
+/config/ @Armor-test/dept-api @Armor-test/team-governance
+/plugins/ @Armor-test/grp-payments @Armor-test/team-core @Armor-test/squad-database
+
+# File type ownership
+*.toml @Armor-test/squad-cloud @Armor-test/dept-automation @Armor-test/dept-reporting
+*.graphql @Armor-test/squad-tooling @Armor-test/squad-qa @Armor-test/grp-api
+*.lock @Armor-test/squad-payments @Armor-test/squad-ml @Armor-test/squad-ux
+*.tsx @Armor-test/squad-search @Armor-test/squad-reporting @Armor-test/dept-data
+*.tf @Armor-test/grp-storage @Armor-test/squad-mobile @Armor-test/dept-test
+*.h @Armor-test/squad-ux @Armor-test/dept-test @Armor-test/squad-database
+*.yaml @Armor-test/team-core @Armor-test/dept-release @Armor-test/squad-api
+*.ts @Armor-test/team-security @Armor-test/unit-devops @Armor-test/squad-tooling
+*.scala @Armor-test/team-frontend @Armor-test/squad-payments @Armor-test/dept-ui
+*.sql @Armor-test/squad-frontend @Armor-test/grp-ui @Armor-test/squad-research
+
+# Security and special files
+Dockerfile @Armor-test/devops @Armor-test/infra
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+/src/**/security/ @Armor-test/security @Armor-test/compliance
